@@ -9,7 +9,7 @@ const moment = require("moment");
 const rp = require("request-promise");
 
 console.log("#####################");
-console.log("PenulisCode");
+console.log("Panggil w Amin Tamvan");
 console.log("#####################");
 
 console.log("");
@@ -210,7 +210,7 @@ const genEmail = length =>
   new Promise((resolve, reject) => {
     var text = "";
     var possible =
-      "abcdefghijklmnopqrstuvwxyz1234567890ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+      "defghijklmnopqrstuvwxyz4567890ABCDEFGHIJKLMNOPQRSTUVW";
 
     for (var i = 0; i < length; i++)
       text += possible.charAt(Math.floor(Math.random() * possible.length));
@@ -219,6 +219,21 @@ const genEmail = length =>
   });
 
 const domain = [
+  "geraldlover.org",
+  "thinkingus24.com",
+  "jymfit.info",
+  "todayemail.ga",
+  "payforclick.org",
+  "cloneviptmc1.club",
+  "emailtech.info",
+  "payforpost.info",
+  "alonzo1121.club",
+  "mimpaharpur.ga",
+  "coolmail.ooo",
+  "alliancewe.us",
+  "wpower.info",
+  "besttandberg.com",
+  "titaspaharpur5.ml",
 "creo.iotu.nctu.me",
 "nasa.dmtc.edu.pl",
 "41054733.mail-temp.com",
@@ -234,7 +249,7 @@ const domain = [
   try {
     for (let index = 0; index < LooP; index++) {
       const item = await domain[(Math.random() * domain.length) | 0];
-      const emel = await genEmail(10);
+      const emel = await genEmail(15);
       await delay(10000);
       const register = await functionRegister(emel, item);
       const email = emel + "@" + item;
