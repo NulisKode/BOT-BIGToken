@@ -9,7 +9,7 @@ const moment = require("moment");
 const rp = require("request-promise");
 
 console.log("#####################");
-console.log("Panggil w Amin Tamvan");
+console.log("PenulisCode");
 console.log("#####################");
 
 console.log("");
