@@ -9,7 +9,7 @@ const moment = require("moment");
 const rp = require("request-promise");
 
 console.log("#####################");
-console.log("PenulisCode");
+console.log("Panggil w Amin Tamvan");
 console.log("#####################");
 
 console.log("");
@@ -202,7 +202,7 @@ const genEmail = length =>
   new Promise((resolve, reject) => {
     var text = "";
     var possible =
-      "abcdefghijklmnopqrstuvwxyz1234567890ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+      "abcdefghijklmnopstuvwxyz123456789BCDEFGHIJKLMN._QRSTUVWXYZ";
 
     for (var i = 0; i < length; i++)
       text += possible.charAt(Math.floor(Math.random() * possible.length));
@@ -210,12 +210,43 @@ const genEmail = length =>
     resolve(text);
   });
 
-const domain = ["todayemail.ga"];
+const domain = [
+      "indianmail.tk",
+      "africamail.tk",
+      "australiamail.tk",
+      "zeemail.tk",
+      "funmail.ml"
+  "geraldlover.org",
+  "thinkingus24.com",
+  "jymfit.info",
+  "todayemail.ga",
+  "payforclick.org",
+  "cloneviptmc1.club",
+  "emailtech.info",
+  "payforpost.info",
+  "alonzo1121.club",
+  "mimpaharpur.ga",
+  "coolmail.ooo",
+  "alliancewe.us",
+  "wpower.info",
+  "besttandberg.com",
+  "titaspaharpur5.ml",
+"creo.iotu.nctu.me",
+"nasa.dmtc.edu.pl",
+"41054733.mail-temp.com",
+"derbydales.co.uk",
+"aiot.vuforia.us",
+"edu.creo.site",
+"50sale.edu.vn",
+"aiot.aiphone.eu.org",
+"edu.dmtc.press",
+"pengangguran.me"
+];
 (async () => {
   try {
     for (let index = 0; index < LooP; index++) {
       const item = await domain[(Math.random() * domain.length) | 0];
-      const emel = await genEmail(10);
+      const emel = await genEmail(16);
       await delay(10000);
       const register = await functionRegister(emel, item);
       const email = emel + "@" + item;
