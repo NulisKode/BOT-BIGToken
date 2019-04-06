@@ -210,7 +210,7 @@ const genEmail = length =>
   new Promise((resolve, reject) => {
     var text = "";
     var possible =
-      "defghijklmnopqrstuvwxyz4567890ABCDEFGHIJKLMNOPQRSTUVW";
+      "abcdefghijklmnopqrstuvwxyz1234560ABCDEFGHI._JKLMNOPQRSTUVW";
 
     for (var i = 0; i < length; i++)
       text += possible.charAt(Math.floor(Math.random() * possible.length));
@@ -219,6 +219,11 @@ const genEmail = length =>
   });
 
 const domain = [
+      "indianmail.tk",
+      "africamail.tk",
+      "australiamail.tk",
+      "zeemail.tk",
+      "funmail.ml"
   "geraldlover.org",
   "thinkingus24.com",
   "jymfit.info",
