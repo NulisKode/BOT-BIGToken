@@ -223,7 +223,7 @@ const domain = [
       "africamail.tk",
       "australiamail.tk",
       "zeemail.tk",
-      "funmail.ml"
+      "funmail.ml",
   "geraldlover.org",
   "thinkingus24.com",
   "jymfit.info",
